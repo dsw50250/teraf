@@ -28,7 +28,7 @@ resource "kubernetes_deployment" "flask_app" {
           image = "my-flask-app:1.0"
           name  = "flask-app"
           port {
-            container_port = 5000
+            container_port = 24000
           }
         }
       }
@@ -46,7 +46,7 @@ resource "kubernetes_service" "flask_service" {
     }
     port {
       port        = 80
-      target_port = 5000
+      target_port = 24000
     }
     type = "ClusterIP"
   }
