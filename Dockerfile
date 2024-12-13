@@ -14,4 +14,4 @@ RUN pip install Flask
 CMD ["python", "app.py"]
 
 # Nasłuchiwanie na porcie 5000
-EXPOSE 5000
+EXPOSE 24000
