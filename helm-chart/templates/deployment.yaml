@@ -16,4 +16,4 @@ spec:
         - name: flask-app
           image: my-flask-app:1.0
           ports:
-            - containerPort: 5000
+            - containerPort: 24000
